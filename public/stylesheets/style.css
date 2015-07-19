@@ -1,18 +1,31 @@
 * {
 	margin: 0;
 	padding: 0;
-	font: 16px Georgia, serif;
+	font-family: 'Droid Sans', 'Helvetica', Arial, sans-serif;
+}
+
+body {
+ 	width: 100%;
+ 	margin: 0px;
+ 	background-color: rgb(243, 242, 242);
+ }
+
+#page-wrap > header  { 
+	display: block;
+	height: 50px;
+	padding: 20px 100px;
+	background-color: rgba(54, 31, 85, 0.9);
+	color: white;
+	font-size: 20px; 
 }
 
 #page-wrap {
-	margin: 2% auto; 
 	color: white; 
 }
 
 #page-wrap > .main {
 	border: 1px solid #999;
 	padding: 1%;
-	margin-bottom: 1px;
 	color: black;
 }
 
@@ -20,16 +33,49 @@ section > div {
 	padding: 20px;
 }
 
-header, nav, section {
+nav {
 	background: #eee;
+	margin: 1% 0;
 	text-align: center;
 }
 
-footer {
+section {
 	background: #eee;
 	text-align: center;
+	margin: 1% 0;
+	min-height: 150px;
+}
+
+section p {
+	text-align: left;
+	padding-top: 1%;
+	padding-left: 10%;
 }
 
 nav span {
-	margin: 0px 10px 0px 0px;
+	margin: 0px 10px 0px 10px;
+}
+
+#page-wrap > .footer { 
+	clear: both;
+	background-color: rgba(54, 31, 85, 0.9);
+	margin-top: 10px;
+	height: 20px;
+	padding: 20px; 
+	color:white;
+	text-align: right;
+}
+
+#page-wrap > .footer > a {
+	color: white;
+}
+
+.input {
+	margin-top: 2%;
+	margin-left: 35%;
+}
+
+.volver {
+	text-align: center;
+	margin-left: 30%;
 }
