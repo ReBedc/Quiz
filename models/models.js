@@ -16,6 +16,7 @@ var storage = process.env.DATABASE_STORAGE;
 var Sequelize = require('sequelize');
 
 // BBDD SQLite
+
 var sequelize = new Sequelize(DB_name, user, pwd, 
 	{	dialect: protocol,
 		protocol: protocol,
@@ -29,6 +30,10 @@ var sequelize = new Sequelize(DB_name, user, pwd,
 // Importamos la definición de la tabla Quiz
 var quiz_path = path.join(__dirname, 'quiz');
 var Quiz = sequelize.import(quiz_path);
+
+
+// Importamos la definición de la tabla Quiz en quiz.js
+var Quiz = sequelize.import(path.join(__dirname,'quiz'));
 
 // Exportamos la definición de la tabla Quiz
 exports.Quiz = Quiz;

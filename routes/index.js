@@ -20,5 +20,4 @@ router.get('/quizes/:quizId(\\d+)/edit', quizController.edit);
 router.put('/quizes/:quizId(\\d+)', quizController.update);
 
 
-
 module.exports = router;
