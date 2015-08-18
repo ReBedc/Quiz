@@ -52,7 +52,7 @@ exports.create = function(req, res) {
 	quiz.validate().then(
 		function (err) {
 			if (err){
-				res.render('quizes/new', {quiz: quiz, errors: []});
+				res.render('quizes/new', {quiz: quiz, errors: err.errors});
 			}
 			else {
 				// guarda la pregunta en BBDD y redirecciona a la página de quizes
